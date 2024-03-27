@@ -1,0 +1,38 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.content {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: inline-block;
+
+  border-radius: 5%;
+
+  animation: content-show 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.imageContent {
+  min-width: 800px;
+  max-width: 1000px;
+  max-height: 1000px;
+
+  background: #171717;
+  border-radius: 2%;
+}
+
+@keyframes content-show {
+  from {
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

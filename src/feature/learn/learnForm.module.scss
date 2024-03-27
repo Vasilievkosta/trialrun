@@ -1,0 +1,39 @@
+/* stylelint-disable shorthand-property-no-redundant-values */
+.goback {
+  min-width: 100%;
+  margin-bottom: 36px;
+}
+
+.content {
+  max-width: 420px;
+  padding: 48px 36px;
+}
+
+.title {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.count {
+  margin-bottom: 17px;
+  color: var(--color-dark-100);
+}
+
+.answer {
+  margin: 18px 0 12px 0;
+}
+
+.question,
+.answer {
+  overflow: hidden;
+}
+
+.rate {
+  margin-bottom: 12px;
+}
+
+.form {
+  & .radio {
+    margin-bottom: 29px;
+  }
+}
